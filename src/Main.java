@@ -58,36 +58,36 @@ public class Main {
             System.out.println(product);
         }
     */
-        Person person1 = new Person("Matei", 20, true);
-        Person person2 = new Person("Andrei", 33, false);
-        Person person3 = new Person("Mircea", 55, true);
+//        Person person1 = new Person("Matei", 20, true);
+//        Person person2 = new Person("Andrei", 33, false);
+//        Person person3 = new Person("Mircea", 55, true);
+//
+//        System.out.println("-------------- --------------------------");
+//
+//        Product product1 = new Product("Snickers", "sweet snack", 4.49,10);
+//        Product product2 = new Product("Coca-Cola", "soda", 3.45,0);
+//        Product product3 = new Product("Chips", "snack", 8.99,142);
+//
+//        System.out.println(product1.getName());
+//        System.out.println(product1.getCategory());
+//        System.out.println(product1.getPrice());
+//        System.out.println(product1.getQuantity());
+//        System.out.println(product2.hasStock());
+//        System.out.println(product3.isCategory("snack"));
+//        System.out.println("----------------------------------------");
 
-        System.out.println("-------------- --------------------------");
-
-        Product product1 = new Product("Snickers", "sweet snack", 4.49,10);
-        Product product2 = new Product("Coca-Cola", "soda", 3.45,0);
-        Product product3 = new Product("Chips", "snack", 8.99,142);
-
-        System.out.println(product1.getName());
-        System.out.println(product1.getCategory());
-        System.out.println(product1.getPrice());
-        System.out.println(product1.getQuantity());
-        System.out.println(product2.hasStock());
-        System.out.println(product3.isCategory("snack"));
-        System.out.println("----------------------------------------");
-
-        Bottle bottle = new Bottle(500, 500, false);
-        System.out.println(bottle.getAvailableLiquid());
-        System.out.println(bottle.getCapacity());
+        Bottle bottle = new Bottle(1500, 1000, false);
+        System.out.println(bottle.getAvailableLiquid() + "ml");
+        System.out.println(bottle.getCapacity() + "ml");
 
         System.out.println(bottle.openBottle());
         System.out.println(bottle.closeBottle());
-
         System.out.println(bottle.openBottle());
-        System.out.println(bottle.drinkLiquid(250));
+
+        System.out.println(bottle.drinkLiquid(2000));
         System.out.println(bottle.hasLiquid());
-        System.out.println(bottle.drinkLiquid(250));
+        System.out.println(bottle.drinkLiquid(560));
         System.out.println(bottle.hasLiquid());
-        System.out.println(bottle.drinkLiquid(250));
+        System.out.println(bottle.drinkLiquid(400));
     }
 }
